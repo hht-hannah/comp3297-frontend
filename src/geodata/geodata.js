@@ -20,9 +20,14 @@ class GeoData extends React.Component {
             return;
         }
         let result = await searchGeodata(this.state.inputValue);
-        this.setState({
-            searchResult: result.data
-        })
+        if (result.stauts == 200) {
+            this.setState({
+                searchResult: result.data
+            })
+        } else {
+            message.error('An error occurred during search.');
+        }
+
     }
 
     addGeodata = async (value) => {
@@ -34,6 +39,8 @@ class GeoData extends React.Component {
                 inputValue: "",
                 searchResult: [],
             })
+        } else {
+            message.error('An error occurred during inserting data.');
         }
     }
 
