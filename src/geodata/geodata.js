@@ -20,7 +20,7 @@ class GeoData extends React.Component {
             return;
         }
         let result = await searchGeodata(this.state.inputValue);
-        if (result.stauts == 200) {
+        if (result.status === 200) {
             this.setState({
                 searchResult: result.data
             })
