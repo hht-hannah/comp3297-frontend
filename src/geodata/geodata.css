@@ -1,0 +1,36 @@
+.geodata-wrapper{
+    margin: 60px 0px;
+}
+
+.search-result-header{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.search-result-item-name{
+    font-size: 14px;
+    text-align: left;
+}
+
+.search-result-item-addressZH{
+    font-size: 8px;
+    color: #888888;
+    text-align: left;
+}
+
+.search-result-item-addressEN{
+    font-size: 8px;
+    color: #888888;
+    text-align: left;
+}
+
+.search-result-item-xy{
+    font-size: 8px;
+    color: #888888;
+    text-align: left;
+}
+
+#map-container {
+    height: 600px;
+    width: 400px;
+}
