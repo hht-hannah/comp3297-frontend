@@ -1,7 +1,6 @@
 import React from "react";
 import { message, Col, Row, Input, List, Button } from "antd";
 import { searchGeodata, addGeodata } from '../service/service';
-import'./geomap';
 import './geodata.css';
 
 const { Search } = Input;

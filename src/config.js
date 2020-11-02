@@ -1,3 +1,3 @@
 export default {
-    apiEntry: "http://127.0.0.1:8000/",
+    apiEntry: "https://serene-sierra-38863.herokuapp.com/",
   };
