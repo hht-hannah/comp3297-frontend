@@ -1,5 +1,6 @@
 import config from "../config"
 import axios from "axios"
+import { message } from "antd"
 
 export const searchGeodata = async (search) => {
   return axios.post(
@@ -9,7 +10,7 @@ export const searchGeodata = async (search) => {
     },
   )
     .catch(function (error) {
-      console.log(error);
+      message.error("An error occurred during search.")
     });
 }
 
@@ -19,6 +20,6 @@ export const addGeodata = async (location) => {
     location
   )
     .catch(function (error) {
-      console.log(error);
+      message.error("An error occurred during inserting data.")
     });
 }

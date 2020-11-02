@@ -20,27 +20,22 @@ class GeoData extends React.Component {
             return;
         }
         let result = await searchGeodata(this.state.inputValue);
-        if (result.status === 200) {
+        if (result) {
             this.setState({
                 searchResult: result.data
             })
-        } else {
-            message.error('An error occurred during search.');
         }
 
     }
 
     addGeodata = async (value) => {
         let res = await addGeodata(value);
-        console.log(res)
-        if (res.status === 201) {
+        if (res) {
             message.success('The selected location has been added.')
             this.setState({
                 inputValue: "",
                 searchResult: [],
             })
-        } else {
-            message.error('An error occurred during inserting data.');
         }
     }
 
