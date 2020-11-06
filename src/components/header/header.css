@@ -1,0 +1,9 @@
+.header {
+    margin: 0 16px;
+}
+
+.header-title {
+    display: inline;
+    font-weight: bolder;
+    font-size: 20px;
+}

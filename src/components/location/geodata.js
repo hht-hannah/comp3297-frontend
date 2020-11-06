@@ -1,6 +1,6 @@
 import React from "react";
 import { message, Col, Row, Input, List, Button } from "antd";
-import { searchGeodata, addGeodata } from '../service/service';
+import { searchGeodata, addGeodata } from '../../service/service';
 import './geodata.css';
 
 const { Search } = Input;
@@ -47,8 +47,11 @@ class GeoData extends React.Component {
 
     render() {
         return (
-            <div>
-                <Row className="geodata-wrapper">
+            <div className="geodata-wrapper">
+                <Row>
+                    <h3 className="page-title"> Location </h3>
+                </Row>
+                <Row className="geodata-search-bar">
                     <Col span={6} />
                     <Col span={12}>
                         <Search

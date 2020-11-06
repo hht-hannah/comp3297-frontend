@@ -1,5 +1,5 @@
-.geodata-wrapper{
-    margin: 60px 0px;
+.geodata-search-bar{
+    margin: 20px 0 40px 0;
 }
 
 .search-result-header{
@@ -28,9 +28,4 @@
     font-size: 8px;
     color: #888888;
     text-align: left;
-}
-
-#map-container {
-    height: 600px;
-    width: 400px;
 }
